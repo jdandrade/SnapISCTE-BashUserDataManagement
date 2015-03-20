@@ -1,3 +1,3 @@
 # SnapISCTE-BashUserDataManagement
-Inserção, remoção, gestão de utilizadores em Bash Script.
+Inserção, remoção, gestão de utilizadores em Bash Script.\n
 Estatisticas sobre os utilizadores.
