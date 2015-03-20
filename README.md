@@ -6,8 +6,6 @@ Insert, Remove, Make new Connections between users in a "database" (text file da
 
 ### How to run
 
-#### -
-Run menu.sh on your command line and follow instructions (in Portuguese).
+- Run menu.sh on your command line and follow instructions (in Portuguese).
 
-#### -
-estatisticas.sh throws you some statistics of your user text file "database".
+- estatisticas.sh throws you some statistics of your user text file "database".
