@@ -7,7 +7,7 @@ echo
 
 echo "Cinco principais dominios de emails dos utilizadores registados"
 
-	cat users/utilizadores.txt | awk -F',' '{print $1}' | awk -F'@' '{print $2}' | uniq -c | sort -r | head -5
+	cat users/utilizadores.txt | awk -F',' '{print $1}' | awk -F'@' '{print $2}' | sort | uniq -c | sort -r | head -5
 echo
 
 echo "Utilizador com mais ligações"
@@ -20,7 +20,7 @@ echo
 
 echo "Licenciatura com mais ligações"
 
-	cursos=$( cat users/utilizadores.txt | awk -F',' '{print $3}' | uniq -c | awk '{print $2}' )
+	cursos=$( cat users/utilizadores.txt | awk -F',' '{print $3}' | sort | uniq -c | awk '{print $2}' )
 
 		for c in $cursos; do
 
@@ -50,7 +50,7 @@ echo
 
 echo "Mês do ano em que mais ligações foram estabelecidas"
 
-	cat users/network_* | awk '{print $1}' | awk -F'-' '{print $1,$2}' | uniq -c | sort -n | head -1 | awk -F' ' '{print $3, $2}'
+	cat users/network_* | awk '{print $1}' | awk -F'-' '{print $1,$2}' | sort | uniq -c | sort -n | head -1 | awk -F' ' '{print $3, $2}'
 echo
 
 exit 0
